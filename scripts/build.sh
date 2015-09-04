@@ -45,7 +45,7 @@ mkdir -pv ${BUILD_FINAL_INITRAMFS}/{bin,sbin,etc/init.d,proc,sys,usr/{bin,sbin}}
 # Copy busybox to initramfs
 cp -av ${BUILD_OUT_BUSYBOX}/_install/* ${BUILD_FINAL_INITRAMFS}
 # Copy init.d scripts to initramfs
-cp ${ROOT}/${INIT}/etc/init.d/* ${BUILD_FINAL_INITRAMFS}/etc/init.d/
+cp ${ROOT}/build/patches/${BUSYBOX}/etc/init.d/* ${BUILD_FINAL_INITRAMFS}/etc/init.d/
 # Create cpio.gz
 cd ${BUILD_FINAL_INITRAMFS}
 ln -s sbin/init init
