@@ -1,0 +1,14 @@
+#!/bin/sh
+export PATH=/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin
+export LD_LIBRARY_PATH=/usr/local/lib:/lib:/usr/lib
+mount -t proc none /proc
+echo "+=====================================================+"
+echo "|                                                     |"
+echo "|                                                     |"
+echo "|            Linux kernel - android 3.10              |"
+echo "|                                                     |"
+echo "|                                                     |"
+echo "+=====================================================+"
+echo ""
+echo "Boot time: $(cat /proc/uptime)"
+/bin/sh
