@@ -1,0 +1,24 @@
+From 14700321dabffb64681dbafd2a191335d3bfd883 Mon Sep 17 00:00:00 2001
+From: Andrei Mandychev <andrei.mandychev@parrot.com>
+Date: Fri, 4 Sep 2015 10:44:47 +0200
+Subject: [PATCH] ARM: versatile: EABI support for user space
+
+---
+ arch/arm/configs/versatile_defconfig | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/arch/arm/configs/versatile_defconfig b/arch/arm/configs/versatile_defconfig
+index 2ba9e63..44e3dbe 100644
+--- a/arch/arm/configs/versatile_defconfig
++++ b/arch/arm/configs/versatile_defconfig
+@@ -55,6 +55,7 @@ CONFIG_I2C_CHARDEV=m
+ CONFIG_FB=y
+ CONFIG_FB_ARMCLCD=y
+ CONFIG_FRAMEBUFFER_CONSOLE=y
++CONFIG_AEABI=y
+ CONFIG_FONTS=y
+ CONFIG_FONT_ACORN_8x8=y
+ CONFIG_SOUND=y
+-- 
+1.9.1
+
