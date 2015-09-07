@@ -14,7 +14,7 @@ KERNEL=kernel
 BUILD_OUT_KERNEL=${ROOT}/out/kernel
 mkdir -p ${BUILD_OUT_KERNEL}
 cd ${ROOT}/${KERNEL}/
-# Configure the kernel for versatile machine (ARM9xx)
+# Configure the kernel for versatile machine (ARM926)
 make O=${BUILD_OUT_KERNEL} versatile_defconfig
 # Build the kernel
 make O=${BUILD_OUT_KERNEL}
