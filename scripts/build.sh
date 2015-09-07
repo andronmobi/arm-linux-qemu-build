@@ -50,4 +50,5 @@ cp ${ROOT}/build/patches/${BUSYBOX}/etc/init.d/* ${BUILD_FINAL_INITRAMFS}/etc/in
 cd ${BUILD_FINAL_INITRAMFS}
 ln -s sbin/init init
 find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../initramfs.cpio.gz
-
+# Copy the kernel to final folder
+cp ${BUILD_OUT_KERNEL}/arch/arm/boot/zImage ${BUILD_FINAL}/
